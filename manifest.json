@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Remove Views",
+  "version": "1.0",
+  "description": "Removes the ugly views from all the posts",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://twitter.com/*"]
+    }
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "permissions": ["storage", "activeTab", "tabs"]
+}
