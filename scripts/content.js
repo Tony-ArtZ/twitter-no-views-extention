@@ -9,6 +9,6 @@ const getContent = () => {
   window.location.href == "https://twitter.com/home";
 
   tweetStats?.forEach((element) => {
-    element.firstChild.style.display = "none"
+    element.firstChild.style.display = "none";
   });
 };

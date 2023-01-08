@@ -8,10 +8,4 @@ window.addEventListener("load", () => {
 
 toggle.addEventListener("click", (e) => {
   chrome.storage.sync.set({ activated: e.target.checked });
-
- /* chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    var activeTab = tabs[0];
-    chrome.tabs.sendMessage(activeTab.id, {activated:  e.target.checked}, function(response) {
-    });
-  });*/
 });
